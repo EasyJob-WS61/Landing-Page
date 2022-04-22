@@ -21,61 +21,56 @@
 </head>
 
 <body>
-
     <header id="top">
-        <h2><img src="img/LOGO.png" alt="Adopt me ya! logo">EasyJob<a href="#"> </a></h2>
-        <nav>
+        <a class="no-decoration" href="index.html">
+            <h2 class="no-decoration"><img src="img/LOGO.png" alt="Adopt me ya! logo">EasyJob</h2>
+        </a>
+        <nav class="navigation">
             <li> <a style="text-decoration: none" href="#hero">Home</a></li>
-            <li> <a style="text-decoration: none" href="#whyadopt">¿Por qué usar EasyJob?</a></li>
+            <li> <a style="text-decoration: none" href="#whyuse">¿Por qué usar EasyJob?</a></li>
             <li> <a style="text-decoration: none" href="#whoweare">¿Quienes somos?</a> </li>
             <li> <a style="text-decoration: none" href="#mission-vision">Misión y visión </a></li>
             <li> <a style="text-decoration: none" href="#pricing"> Membresía</a></li>
             <li> <a style="text-decoration: none" href="#pricing">Ingresa</a></li>
         </nav>
-
     </header>
 
-
     <section id=hero class="hero">
+        <div class="background-image">
+            <h1>¡CONSIGUE TU TRABAJO SOÑADO!</h1>
+            <img src="img/AppPlay.png" alt="Play Store and App Store" width="400px"><a href="#"></a>
+            <h2>
+                <a style="text-decoration: none" href="">¡Descarga ya!</a>
+            </h2>
+        </div>
 
-        <div class="background-image" style="background-image: url(img/img.jpg)" alt="sad dog"></div>
-
-        <h1>
-            ¡CONSIGUE TU TRABAJO SOÑADO!
-        </h1>
-
-        <img src="img/AppPlay.png" alt="Play Store and App Store"><a href="#"></a>
-
-        <h2>
-            <a style="text-decoration: none" href="">¡Descarga ya!</a>
-        </h2>
     </section>
 
-
-
-
-    <section id="whyadopt" class="whyadopt" >
-        <h4>Why use Adoptme ya!?</h4>
+    <section id="whyuse" class="whyuse" >
+        <h4>Why use EasyJob?</h4>
         <ul class="grid">
             <li>
-                <i><img src="img/png2.png" height="190px" alt="Nursing image"></i>
-                <p>You can find good veterinarians <br> near your house</p>
-            </li>
-
-            <li>
-                <i><img src="img/png1.png" height="190px" alt="Image of girl with puppies"></i>
-                <p>You will find your ideal pet because <br>there is much variety</p>
+                <i><img class="rounded" src="img/user-experience-001.png" height="190px" alt="Edward, 23 years old"></i>
+                <p class="mt">Eduardo 23</p>
+                <p>Got a job at Entel as a backend programmer</p>
             </li>
             <li>
-                <i><img src="img/png.png" height="190px" alt="Battered dog image"></i>
-                <p>You will save animals that do not own <br>and they only have a temporary home</p>
+                <i><img class="rounded" src="img/user-experience-002.png" height="190px" alt="Fiorella, 28 years old"></i>
+                <p class="mt">Fiorella 28</p>
+                <p>Got a job at Movistar as a frontend developer</p>
             </li>
-
-
-
+            <li>
+                <i><img class="rounded" src="img/user-experience-003.png" height="190px" alt="Gianella, 28 years old"></i>
+                <p class="mt">Gianella 40</p>
+                <p>Got a job at Claro as a backend programmer in python</p>
+            </li>
+            <li>
+                <i><img class="rounded" src="img/user-experience-004.png" height="190px" width="190px" alt="Movistar company logo"></i>
+                <p class="mt">Movistar</p>
+                <p>They posted over 120 jobs for software and systems programmers and engineers.</p>
+            </li>
         </ul>
     </section>
-
 
     <section id="whoweare" class="whoweare" style="background-image: url(img/img1.jpg);    width:100%;
 height: 800px;     background-size:cover;">
@@ -91,175 +86,166 @@ height: 800px;     background-size:cover;">
 
     </section>
 
-
-
     <section id="mission-vision" class="mission-vision">
         <div class="capa" id="capa">
             <img style="background-image: url(img/img2.jpg)"></img>
             <h5><a href="#mission-vision"></a>
 
-                <p> Mission <br> <br> <br> Easy Software Corp Our Mission <br> is to provide an agile solution to our <br> 
-                    customers 
-                    and satisfy all your expects regarding the product <br> in our hands. <br> <br> <br> 
-                    Vision <br> <br> 
-                    Be a local company in being a leader <br> in the Software Development Category <br> 
-                    Through a constant work <br> and recruit the best talents. <br> This way 
+                <p> Mission <br> <br> <br> Easy Software Corp Our Mission <br> is to provide an agile solution to our <br>
+                    customers
+                    and satisfy all your expects regarding the product <br> in our hands. <br> <br> <br>
+                    Vision <br> <br>
+                    Be a local company in being a leader <br> in the Software Development Category <br>
+                    Through a constant work <br> and recruit the best talents. <br> This way
                     , create a good image before our customers.
                 </p>
-
             </h5>
-
         </div>
-
-
     </section>
 
-
-
-
     <section id="pricing" class="pricing">
-
-
         <h5> <a href="#pricing"></a>
             <p>PRICES</p>
             <div class="container py-5">
                 <!-- END -->
-
-
-
-                <div class="row text-center align-items-end">
+                <div class="row text-center">
                     <!-- Pricing Table-->
                     <div class="col-lg-3 mb-5 mb-lg-0">
-                        <div class="bg-white p-5 rounded-lg shadow">
-                            <h1 class="h6 text-uppercase font-weight-bold mb-4">Customer</h1>
-                            <h2 class="h2 font-weight-bold">FREE</span></h2>
+                        <div class="height-1 bg-white p-5 rounded-lg shadow">
+                            <div>
+                                <h1 class="h6 text-uppercase font-weight-bold mb-4">Customer</h1>
+                                <h2 class="h2 font-weight-bold">FREE</span></h2>
 
-                            <div class="custom-separator my-4 mx-auto bg-primary"></div>
+                                <div class="custom-separator my-4 mx-auto bg-primary"></div>
 
-                            <ul class="list-unstyled my-5 text-small text-left">
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> 10 Adoption publications per month
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Visualize the profiles of 
-                                    Applicants (Unlimited)
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i>Contact the applicants 
-                                    (unlimited)
-                                </li>
-                                <li class="mb-3 text-muted">
-                                    <i class="fa fa-times mr-2"></i>
-                                    <del>Unlimited publications</del>
-                                </li>
-                                <li class="mb-3 text-muted">
-                                    <i class="fa fa-times mr-2"></i>
-                                    <del>Unlimited publications</del>
-                                </li>
-                                <li class="mb-3 text-muted">
-                                    <i class="fa fa-times mr-2"></i>
-                                    <del>Unlimited duration of publication</del>
-                                </li>
-                            </ul>
+                                <ul class="list-unstyled my-5 text-small text-left">
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> 10 Adoption publications per month
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Visualize the profiles of
+                                        Applicants (Unlimited)
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i>Contact the applicants
+                                        (unlimited)
+                                    </li>
+                                    <li class="mb-3 text-muted">
+                                        <i class="fa fa-times mr-2"></i>
+                                        <del>Unlimited publications</del>
+                                    </li>
+                                    <li class="mb-3 text-muted">
+                                        <i class="fa fa-times mr-2"></i>
+                                        <del>Unlimited publications</del>
+                                    </li>
+                                    <li class="mb-3 text-muted">
+                                        <i class="fa fa-times mr-2"></i>
+                                        <del>Unlimited duration of publication</del>
+                                    </li>
+                                </ul>
+                            </div>
                             <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">see more</a>
                         </div>
                     </div>
                     <!-- END -->
-
-
                     <!-- Pricing Table-->
                     <div class="col-lg-3 mb-5 mb-lg-0">
-                        <div class="bg-white p-5 rounded-lg shadow">
-                            <h1 class="h6 text-uppercase font-weight-bold mb-4">Premium client</h1>
-                            <h2 class="h2 font-weight-bold">10 S.<span class="text-small font-weight-normal ml-2">/
+                        <div class="height-1 bg-white p-5 rounded-lg shadow">
+                            <div>
+                                <h1 class="h6 text-uppercase font-weight-bold mb-4">Premium client</h1>
+                                <h2 class="h2 font-weight-bold">10 S.<span class="text-small font-weight-normal ml-2">/
                                     month</span></h2>
 
-                            <div class="custom-separator my-4 mx-auto bg-primary"></div>
+                                <div class="custom-separator my-4 mx-auto bg-primary"></div>
 
-                            <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i>Unlimited publications
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Unlimited duration of publication
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Search for all kinds of animals
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Unlimited adoption
-                                </li>
+                                <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i>Unlimited publications
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Unlimited duration of publication
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Search for all kinds of animals
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Unlimited adoption
+                                    </li>
 
-                                <li class="mb-3 text-muted">
-                                    <i class="fa fa-times mr-2"></i>
-                                    <del>Publish advertisements</del>
-                                </li>
-                            </ul>
+                                    <li class="mb-3 text-muted">
+                                        <i class="fa fa-times mr-2"></i>
+                                        <del>Publish advertisements</del>
+                                    </li>
+                                </ul>
+                            </div>
                             <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Ver más</a>
                         </div>
                     </div>
                     <!-- END -->
-
-
                     <!-- Pricing Table-->
-                    <div class="col-lg-3">
-                        <div class="bg-white p-5 rounded-lg shadow">
-                            <h1 class="h6 text-uppercase font-weight-bold mb-4">Veterinarians</h1>
-                            <h2 class="h2 font-weight-bold">199 S.<span
-                                    class="text-small font-weight-normal ml-2">/month</span></h2>
+                    <div class="col-lg-3 mb-5 mb-lg-0">
+                        <div class="height-1 bg-white p-5 rounded-lg shadow">
+                            <div>
+                                <h1 class="h6 text-uppercase font-weight-bold mb-4">Veterinarians</h1>
+                                <h2 class="h2 font-weight-bold">199 S.<span
+                                        class="text-small font-weight-normal ml-2">/month</span></h2>
 
-                            <div class="custom-separator my-4 mx-auto bg-primary"></div>
+                                <div class="custom-separator my-4 mx-auto bg-primary"></div>
 
-                            <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> 5 advertisements x 199 soles
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> 1 publication x 50 soles
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> publication
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Publish any social network
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Modify publications
-                                </li>
-                                <li class="mb-3">
+                                <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> 5 advertisements x 199 soles
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> 1 publication x 50 soles
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> publication
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Publish any social network
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Modify publications
+                                    </li>
+                                    <li class="mb-3">
 
-                            </ul>
+                                </ul>
+                            </div>
                             <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">See more</a>
                         </div>
                     </div>
                     <!-- END -->
-                    <div class="col-lg-3">
-                        <div class="bg-white p-5 rounded-lg shadow">
-                            <h1 class="h6 text-uppercase font-weight-bold mb-4">Suppliers</h1>
-                            <h2 class="h2 font-weight-bold">79 S.<span
-                                    class="text-small font-weight-normal ml-2">/month</span></h2>
+                    <!-- Pricing Table-->
+                    <div class="col-lg-3 mb-5 mb-lg-0">
+                        <div class="height-1 bg-white p-5 rounded-lg shadow">
+                            <div>
+                                <h1 class="h6 text-uppercase font-weight-bold mb-4">Suppliers</h1>
+                                <h2 class="h2 font-weight-bold">79 S.<span
+                                        class="text-small font-weight-normal ml-2">/month</span></h2>
 
-                            <div class="custom-separator my-4 mx-auto bg-primary"></div>
+                                <div class="custom-separator my-4 mx-auto bg-primary"></div>
 
-                            <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> 5 advertisements x 79 soles
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> publications unlimited
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Messages with clients
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Publish any social network
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fa fa-check mr-2 text-primary"></i> Modify publications
-                                </li>
-                                <li class="mb-3">
+                                <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> 5 advertisements x 79 soles
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> publications unlimited
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Messages with clients
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Publish any social network
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="fa fa-check mr-2 text-primary"></i> Modify publications
+                                    </li>
+                                    <li class="mb-3">
 
-                            </ul>
+                                </ul>
+                            </div>
                             <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">See more</a>
                         </div>
                     </div>
@@ -278,11 +264,5 @@ height: 800px;     background-size:cover;">
         <p>Copyright(C) 2021 <a href="#" target="_blank">EasySoftware</a></p>
         <p>All rights reserved.</p>
     </footer>
-
-
-
-
 </body>
-
-
 </html>

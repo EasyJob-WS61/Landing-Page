@@ -15,7 +15,7 @@ html {
 }
 ul, nav {
     list-style: none;
-    
+
 }
 a {
 	text-decoration: none;
@@ -39,7 +39,7 @@ section {
     display: flex;
     flex-direction: column;
     padding: 120px 0px;
- 
+
 }
 
 @media (max-width: 1000px){
@@ -53,11 +53,30 @@ section {
 ul.grid {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 /*header*/
-
+@media (max-width: 1000px) {
+    ul.grid {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.mt {
+    margin-top: 20px;
+}
+.mt-card {
+    margin-top: 50px;
+}
+.rounded {
+    border-radius: 50px; !important;
+}
+.no-decoration {
+    text-decoration: none;
+}
+.no-decoration:hover {
+    color: rgb(1, 196, 255);
+}
 header {
 
     top: 0;
@@ -65,7 +84,7 @@ header {
     position: fixed;
     z-index: 2;
     width: 100%;
-    height:75px;
+    height:auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -73,6 +92,12 @@ header {
     padding: 0px 10px 0 ;
     background-color: #ffffff;
 
+}
+@media (max-width: 1000px) {
+    header {
+        position: static;
+
+    }
 }
 header h2{
     font-family: 'Quicksand', sans-serif;
@@ -104,11 +129,8 @@ header nav li a
 }
 
 header nav li a:hover
-{   color: #02edb3;
-    font-size: 19px;
-    font-weight: 600;
-
-
+{
+    color: #02edb3;
 }
 header h2 img {
 
@@ -149,6 +171,18 @@ header h2 img {
     }
 }
 
+@media (max-width: 1000px) {
+    header nav li {
+        text-align: center;
+    }
+    header nav li:first-child {
+        margin-left:20px;
+    }
+    header nav li:last-child {
+        margin-right:20px;
+    }
+}
+
 @media(max-width: 1000px){
     header {
         padding: 1px 40px;
@@ -170,26 +204,42 @@ header h2 img {
     position: relative;
     justify-content: center;
     min-height: 100vh;
-
+    height: 100%;
+    width: 100%;
     color: #fff;
     text-align: center;
     align-items: center;
     margin:0;
+    background-image: url("../img/img.jpg");
 }
 
 .hero .background-image{
     position: absolute;
-    top: 0;
     left: 0;
+    top: 0;
     width:100%;
     height: 100%;
-    background-size: cover;
-    background-color: #2196f3;
-    z-index: 0;
+    background-color: rgba(33, 150, 243, 0.48);
 	justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
 }
+@media (max-width: 1000px) {
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation a {
+        margin: 0 0; !important;
+        align-items: center;
+        text-align: center;
+    }
+}
+/*
 .hero .background-image:after{
     content: '';
     position: absolute;
@@ -199,13 +249,13 @@ header h2 img {
     height: 100%;
     background-color: #01c4ff;
     opacity: 0.50;
-	
-}
+
+}*/
 .hero h1 {
     font: bold 60px 'Open Sans', sans-serif;
     margin: 5px;
     padding: 5px;
-    z-index: 2;
+    /*z-index: 2;*/
 }
 .hero h2{
     font: bold 60px 'Open Sans', sans-serif;
@@ -215,19 +265,13 @@ header h2 img {
     border-radius: 12px;
     padding: 15px 40px;
     margin-top: 20px;
-    z-index: 2;
+    /*z-index: 2;*/
 }
 .hero img {
-    z-index: 4;
+    /*z-index: 4;*/
     width: 550px;
 }
 @media (max-width: 800px){
-    .hero .background-image {
-        width: 450px;
-		height: 435px;
-		background-size: 900px, 650px;
-    }
-
     .hero h1 {
         font-size: 15px;
 		padding-top: -50px;
@@ -242,7 +286,7 @@ header h2 img {
 	}
 }
 @media (max-width: 550px){
-    
+
 }
 
 .video{
@@ -317,13 +361,13 @@ header h2 img {
 
 
 
-.whyadopt{
+.whyuse{
 
     justify-content: center;
     display: flex;
     align-items: center;
 }
-.whyadopt .background-image{
+.whyuse .background-image{
     position: absolute;
     top: 0;
     left: 0;
@@ -336,42 +380,48 @@ header h2 img {
     align-items: center;
 
 }
-.whyadopt h4{
+.height-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.whyuse h4{
     font: bold 40px 'Open Sans', sans-serif;
     margin-bottom: 50px;
     color: rgb(1, 196, 255);
 }
-.whyadopt a{
+.whyuse a{
     font: bold 40px 'Open Sans', sans-serif;
 }
-.whyadopt .grid li{
+.whyuse .grid li{
     padding: 0 30px;
     flex-basis: 33.3%;
     text-align: center;
 }
-.whyadopt .grid li p{
+.whyuse .grid li p{
    color: #01c4ff;
    font: bold 25px 'Open Sans', sans-serif;
 }
 @media(max-width: 750px){
-    .whyadopt .background-image {
+    .whyuse .background-image {
         width: 450px;
         height: 435px;
         background-size: 900px, 650px;
     }
-	.whyadopt{
+	.whyuse{
 		display: column;
 	}
-	.whyadopt .grid li{
+	.whyuse .grid li{
 		flex-basis: 70%;
 	}
-	.whyadopt .grid li p{
+	.whyuse .grid li p{
 		font-size: 15px;
 	}
-	.whyadopt .grid li i img{
+	.whyuse .grid li i img{
 		margin-top: 20px;
 	}
-    .whyadopt h4 {
+    .whyuse h4 {
         font-size: 20px;
 		margin-top: 20px;
     }
@@ -381,7 +431,7 @@ header h2 img {
 .whoweare {
     /*position: relative;*/
     justify-content: center;
-  
+
     color: #fff;
     text-align: center;
     background-color: #34d8f5;
@@ -422,8 +472,8 @@ header h2 img {
 .whoweare p{
     margin: 15px,15px;
     font: bold 25px 'Open Sans', sans-serif;
-   
-  
+
+
 }
 @media(max-width: 750px){
     .whoweare p{
@@ -448,7 +498,7 @@ header h2 img {
     background-color: #57BFFF;
     margin:0;
     padding:0;
-   
+
 }
  .mission-vision .capa{
      display:flex;
@@ -461,7 +511,7 @@ header h2 img {
     font: bold 25px 'Open Sans', sans-serif;
     margin-bottom: 25px;
     color:rgb(253, 252, 250);
-    
+
     align-content: center;
    float: right;
    text-align: center;
@@ -474,18 +524,18 @@ header h2 img {
     font: bold 25px 'Open Sans', sans-serif;
 
     margin: 15px,15px;
-     
+
    float: right;
    padding-left: 90px;
    padding-right: 90px;
-   
+
 }
 .mission-vision img{
     width:70%;
     height:890px;
     background-size:cover;
     margin:0;
-    float: left; 
+    float: left;
     padding: 0;
 }
 @media(max-width: 750px){
@@ -514,10 +564,10 @@ header h2 img {
 
 .coverage{
     background-color: hsl(325, 86%, 46%);
-    
+
     /*position: relative;*/
     justify-content: center;
-  
+
     color: #fff;
     text-align: center;
     background-color: #34d8f5;
@@ -526,7 +576,7 @@ header h2 img {
     align-items: center;
 }
 .coverage .background-image{
-    
+
     top: 0;
     left: 0;
     width:100%;
@@ -536,7 +586,7 @@ header h2 img {
     margin:0;
     display: flex;
     flex-wrap: wrap;
-   
+
 }
 .coverage .background-image:after{
     content: '';
@@ -544,8 +594,8 @@ header h2 img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 560px;  
-   
+    height: 560px;
+
 }
 .coverage h6 {
     font: bold 41px 'Open Sans', sans-serif;
@@ -557,10 +607,10 @@ header h2 img {
 
 }
 .coverage p{
-    
+
     font: 21px 'Open Sans', sans-serif;
     left:35px;
-  
+
 }
 .coverage p2{
     font:bold 27px 'Open Sans', sans-serif;
@@ -650,10 +700,10 @@ footer ul li{
 }
 
 footer ul li:first-child{
-    margin-left: 0; 
+    margin-left: 0;
 }
 footer ul li:last-child{
-    margin-right: 0;    
+    margin-right: 0;
 }
 footer p {
     margin-bottom: 0px;
